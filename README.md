@@ -1,58 +1,18 @@
-Library Management System Documentation
-Welcome to the Library Management System! This system is designed to manage books, users, and authors efficiently. Below is a detailed guide on how to interact with the system and utilize its features.
+README for Library Management System
+
+This README provides an overview of the Library Management System, a command-line-based application designed to manage books and resources within a library. This system allows users to browse, borrow, return, and explore a collection of books, demonstrating proficiency in Object-Oriented Programming (OOP) principles and effective use of Python modules.
 Features
 
-1. Book Management
+Book Management: Add new books, borrow, return, search, and display all books.
+User Management: Add new users, view user details, and display all users.
+Author Management: Add new authors, view author details, and display all authors.
+Interactive Command-Line Interface: Easy-to-use menus for navigating various functionalities.
 
-Add a New Book: Allows you to enter details for a new book and add it to the system.
-Borrow a Book: Users can borrow a book if it is available.
-Return a Book: Allows users to return books they have borrowed.
-Search for a Book: Search the library's collection by various criteria such as title, author, or genre.
-Display All Books: Lists all the books in the library.
-2. User Management
+Usage
 
-Add a New User: Register a new user with a unique library ID.
-View User Details: Display details of a specific user, including borrowed books.
-Display All Users: List all users registered in the system.
-3. Author Management
+After running the application, follow the on-screen prompts to navigate through the menu system:
+Main Menu: Choose from Book, User, or Author operations.
+Book Operations: Add, borrow, return, search for, or display books.
+User Operations: Add a new user or view details of existing users.
+Author Operations: Add a new author or view details of existing authors.
 
-Add a New Author: Add authors along with their biographies to the system.
-View Author Details: View detailed biographies and list of books by the author.
-Display All Authors: Show all authors whose books are available in the library.
-Classes and Methods
-
-Class: Book
-
-Attributes:
-title: Title of the book.
-author: Author of the book.
-genre: Genre of the book.
-publication_date: Publication date of the book.
-availability: Current availability status of the book.
-Methods:
-__init__: Initializes a new book instance.
-__str__: Returns a string representation of the book.
-Class: User
-
-Attributes:
-name: Name of the user.
-library_id: Unique identifier for the user.
-borrowed_books: List of books currently borrowed by the user.
-Methods:
-__init__: Initializes a new user instance.
-borrow_book: Allows a user to borrow a book.
-return_book: Allows a user to return a borrowed book.
-Class: Author
-
-Attributes:
-name: Name of the author.
-biography: A short biography of the author.
-Methods:
-__init__: Initializes a new author instance.
-__str__: Returns a string representation of the author.
-
-
-The system includes validation for genres. When adding a new book, the genre must be one of the predefined valid genres: "Science Fiction", "Drama", "Action", "Biography", "History", "Mystery". If an invalid genre is entered, the system will raise a ValueError.
-Conclusion
-
-This Library Management System is designed to be user-friendly and efficient in managing a library's operations. Whether you are managing books, users, or authors, this system provides a comprehensive set of tools to help maintain and organize library resources effectively.
